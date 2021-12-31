@@ -1,11 +1,10 @@
-
 var x = -1;
-document.getElementById("Put1").disabled = true;
+document.getElementById("input-el").disabled = true;
 
 function TestFun() {
     var y = document.getElementById("testnumber").innerHTML;
     y = parseFloat(y) + 1;
-    var B = document.getElementById("Put1").value;
+    var B = document.getElementById("input-el").value;
     document.getElementById("testnumber").innerHTML = y;
     if (B > x) {
 
@@ -24,8 +23,8 @@ function TestFun() {
 function Sur() {
     document.getElementById("Note").innerHTML = x;
 }
-function Start1() {
+function start() {
     x = Math.floor(Math.random() * 100) + 1;
-    document.getElementById("Put1").disabled = false;
-    document.getElementById("Put1").focus();
+    document.getElementById("input-el").disabled = false;
+    document.getElementById("input-el").focus();
 }
