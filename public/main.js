@@ -2,6 +2,7 @@ var x = -1;
 document.getElementById("input-el").disabled = true;
 
 function TestFun() {
+    debugger;
     var y = document.getElementById("testnumber").innerHTML;
     y = parseFloat(y) + 1;
     var B = document.getElementById("input-el").value;
@@ -27,4 +28,10 @@ function start() {
     x = Math.floor(Math.random() * 100) + 1;
     document.getElementById("input-el").disabled = false;
     document.getElementById("input-el").focus();
+}
+function keydownHandeler(){
+    if(event.key==='Enter'){
+        TestFun();
+    }
+
 }
