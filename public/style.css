@@ -22,6 +22,7 @@ body {
    }
    input{
     position: absolute;
+    
     font-family: "salam";
     width: 464px;
     height: 110px;
@@ -58,4 +59,49 @@ body {
 .number {
     left: 1080px;
     top: 550px;  
+} 
+/* ---------------------------------mobile beta ------------------------------- */
+@media screen and (max-width : 480px) {
+    body {
+        background-size: cover;
+        background-image: url('img/wallM.png');
+        background-repeat: no-repeat;
+    }
+    input {
+        position: absolute;
+        font-family: "salam";
+        width: 200px;
+        height: 80px;
+        left: 70px;
+        top: 250px;
+        font-size: 25px;   
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        color: #021249;
+        box-sizing: border-box;
+        border-radius: 33px;  
+    }
+    button {
+        position: relative;
+        font-family: "salam";
+        width: 70px;
+        height: 50px;
+        left: 55px;
+        top: 370px;
+        
+        color: #021249;
+        font-size: 15px;
+        background: #FFFFFF;
+        border-radisus: 20px;
+       }
+       p {
+        position: absolute ;
+        left: 55px;
+        font-family: "salam";
+        font-size: 40px;
+        color:  #021249;
+       }
+
 }
+
+
