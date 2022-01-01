@@ -32,6 +32,7 @@ function start() {
 function keydownHandeler(){
     if(event.key==='Enter'){
         TestFun();
+        document.getElementById("input-el").select();
     }
 
 }
