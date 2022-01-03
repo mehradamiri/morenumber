@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in chad tas ?</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <a href="https://github.com/mehradamiri" target="https://github.com/mehradamiri">about me</a>
-    <input type="number" value="" id="input-el" onkeydown="keydownHandeler()">
-    <button onclick="start()" id="btn_start">start</button>
-    <button onclick="Sur()" id="surend">surnder</button>
-    <button id="TestBtn" onclick="TestFun()">test</button> 
-    <p  class="hint"id="Num1"></p>
-    <p class="number" id="Note"></p>
-    <script src="main.js"></script>
-    <p class="hads" id="testnumber">0</p>
-</body>
+<body style="background-color: rgb(25, 75, 92);">
 
+    <div id="main-div" class=" d-flex align-items-center bg-primary  justify-content-center container-fluid" style="height: 100px;">
+        <input class="" type="number" id="inp-main" onkeydown="keydownHandeler()" placeholder="🤔یه عدد حدس بزن ">
+    </div>
+    <div id="th-num" class=" d-flex align-items-center bg-primary  justify-content-center container-fluid" style="height: 100px;"">
+        <p id="testnumber" class="rtl"> 0 تعداد حدس ها</p> 
+        <div class="d-flex align-items-center rtl" >
+        </div>
+    </div>
+    <div id="main-div" class=" d-flex align-items-center bg-primary  justify-content-center container-fluid" style="height: 100px;">
+        <p id="Num1" class="rtl"> روی دکمه شروع کلیک کن</p> 
+    </div>
+    <div class="row-cols-1"  >
+        <button type="button" style="height: 60px;" onclick="start()" class="btn btn-warning">شروع</button>
+        <button type="button" style="height: 60px;" onclick="TestFun()" class="btn btn-warning ">امتحان</button>
+        <button type="button" style="height: 60px;" class="btn btn-warning ">اموزش</button>
+    </div>
+    <div class=" d-flex align-items-center  justify-content-center container-fluid" ">
+        <p class="reverse"> دوست داری پروژه های دیگه منو ببینی رو <a href="https://github.com/mehradamiri" target="">اینجا</a> کلیک کن</p>
+    </div>
+    
+    
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

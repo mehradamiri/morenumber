@@ -1,0 +1,35 @@
+@font-face {
+    font-family: salam;
+    src: url(font/Lalezar-Regular.ttf);
+}
+body {
+    background-color: #f5f5f5 ;
+}
+::placeholder {
+    font-family: salam;
+    opacity: 0.5; 
+    text-align: center;
+}
+input{
+    font-family: salam;
+    height: 50%;
+    width: 50% ;
+    border-radius: 10px;
+    text-align: center;
+}
+main-div {
+    height : 45px
+}
+p {
+    font-family : salam;
+    font-size : 34px ;
+    color: white;
+}
+button {
+    font-family : salam;
+    color: white;
+}
+a {
+    color: rgb(36, 185, 36) ;
+}
+
