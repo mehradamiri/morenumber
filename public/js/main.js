@@ -1,38 +1,34 @@
 var x = -1;
-document.getElementById("input-el").disabled = true;
+document.getElementById("inp-main").disabled = true;
 
 function TestFun() {
-    debugger;
     var y = document.getElementById("testnumber").innerHTML;
     y = parseFloat(y) + 1;
-    var B = document.getElementById("input-el").value;
+    var B = document.getElementById("inp-main").value;
     document.getElementById("testnumber").innerHTML = y;
     if (B > x) {
 
-        document.getElementById("Num1").innerText = "lesser";
+        document.getElementById("Num1").innerText = "کمتر";
     }
     else if (B < x) {
-        document.getElementById("Num1").innerText = "More";
+        document.getElementById("Num1").innerText = "بیشتر";
     }
     else {
-        document.getElementById("Num1").innerText = "win";
+        document.getElementById("Num1").innerText = "👑 درست حدس زدی ";
         var w = document.getElementById("testnumber").innerHTML;
        alert (`${w}`);
-        document.getElementById("testnumber").innerHTML = "0" ;
+        document.getElementById("testnumber").innerHTML = " 0 تعداد حدس ها" ;
     }
-}
-function Sur() {
-    document.getElementById("Note").innerHTML = x;
 }
 function start() {
     x = Math.floor(Math.random() * 100) + 1;
-    document.getElementById("input-el").disabled = false;
-    document.getElementById("input-el").focus();
+    document.getElementById("inp-main").disabled = false;
+    document.getElementById("inp-main").focus();
 }
 function keydownHandeler(){
     if(event.key==='Enter'){
         TestFun();
-        document.getElementById("input-el").select();
+        document.getElementById("inp-main").select();
     }
 
 }
