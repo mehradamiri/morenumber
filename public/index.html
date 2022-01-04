@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: rgb(25, 75, 92);">
+<body class="" style="background-color: rgb(25, 75, 92);">
 
     <div id="main-div" class=" d-flex align-items-center bg-primary  justify-content-center container-fluid" style="height: 100px;">
         <input class="" type="number" id="inp-main" onkeydown="keydownHandeler()" placeholder="🤔یه عدد حدس بزن ">
@@ -21,11 +21,14 @@
     <div id="main-div" class=" d-flex align-items-center bg-primary  justify-content-center container-fluid" style="height: 100px;">
         <p id="Num1" class="rtl"> روی دکمه شروع کلیک کن</p> 
     </div>
-    <div class="row-cols-1"  >
-        <button type="button" style="height: 60px;" onclick="start()" class="btn btn-warning">شروع</button>
-        <button type="button" style="height: 60px;" onclick="TestFun()" class="btn btn-warning ">امتحان</button>
-        <button type="button" style="height: 60px;" class="btn btn-warning ">اموزش</button>
+    <div class="container-fluid">  
+          <div class=" row d-flex justify-content-center  "  >
+        <button type="button" style="height: 60px; " onclick="start()" class="btn btn-warning col-12 col-md-2 ">شروع</button>
+        <button type="button" style="height: 60px; " onclick="TestFun()" class="btn btn-warning col-12 col-md-2  ">امتحان</button>
+        <button type="button" style="height: 60px; " class="btn btn-warning col-12 col-md-2 ">اموزش</button>
     </div>
+</div>
+
     <div class=" d-flex align-items-center  justify-content-center container-fluid" ">
         <p class="reverse"> دوست داری پروژه های دیگه منو ببینی رو <a href="https://github.com/mehradamiri" target="">اینجا</a> کلیک کن</p>
     </div>
