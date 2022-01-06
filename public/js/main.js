@@ -8,10 +8,10 @@ function TestFun() {
     document.getElementById("testnumber").innerHTML = y;
     if (B > x) {
 
-        document.getElementById("Num1").innerText = "کمتر";
+        document.getElementById("Num1").innerText = " کمتر از "+B;
     }
     else if (B < x) {
-        document.getElementById("Num1").innerText = "بیشتر";
+        document.getElementById("Num1").innerText = " بیشتر از"+B;
     }
     else {
         document.getElementById("Num1").innerText = "👑 درست حدس زدی ";
